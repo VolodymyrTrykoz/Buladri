@@ -1,0 +1,371 @@
+.benefits
+    position: relative
+    background: linear-gradient(to bottom,rgba(106,181,55, .25) 0%,#fafafa 12%)
+    padding-top: get-vw(150px)
+
+    .container
+        margin-bottom: get-vw(30px)
+    &__product
+        display: flex
+
+        .product__left
+            padding-top: get-vw(50px)
+            width: 50%
+
+            p
+                font-size: get-vw(20px)
+                line-height: 1.4
+                color: #312842
+            img
+                width: get-vw(400px)
+        .product__right
+            width: 50%
+            img
+                width: get-vw(500px)
+                @extend %relative
+                transform: translateX(get-vw(30px))
+    &__text
+        text-align: center
+        position: relative
+        z-index: 5
+        background: #fafafa
+        padding: get-vw(70px) 0 get-vw(50px)
+    .figureContainer
+        position: relative
+    .row1
+        p
+           width: 70%
+           margin-left: get-vw(140px)
+    .row5
+        p
+           width: 80%
+           margin-left: get-vw(100px)
+
+    .roadmap__row
+        display: flex
+        min-height: get-vw(160px)
+        align-items: center
+    .roadmap
+        position: relative
+        &__left
+              width: 40%
+              position: relative
+              text-align: right
+              span
+                  right: get-vw(-90px)
+        &__center
+              width: 20%
+              text-align: center
+        &__right
+              width: 40%
+              position: relative
+              text-align: left
+              span
+                  left: get-vw(-90px)
+              p
+                  width: 95%
+    .benefits__roadmap
+        &.clipPathActive
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            .line
+                background-color: #7cc337
+                width: get-vw(4px)
+            .number
+                color: #f1f3f2
+            .circle
+                &.active
+                    box-shadow: 0 7px 14px 0 rgba(124,195,55,0)
+
+    .subheading
+        font-size: get-vw(20px)
+        color: rgb(241, 89, 42)
+        font-weight: 400
+        margin-bottom: get-vw(5px)
+
+    .heading
+        font-size: get-vw(50px)
+        font-weight: 300
+        margin: 0
+
+    p
+        font-size: get-vw(20px)
+        position: relative
+        z-index: 2
+        opacity: 0.8
+    .number
+        font-size: get-vw(110px)
+        font-family: 'Roboto', sans-serif
+        color: #f1f3f2
+        font-weight: 900
+        position: absolute
+        z-index: 1
+        top: 50%
+        transform: translateY(-50%)
+    .circle
+        width: get-vw(30px)
+        height: get-vw(30px)
+        border-radius: 50%
+        background: #fff
+        border: 1px solid #d8dfea
+        position: relative
+        z-index: 2
+        margin: auto
+        display: flex
+        justify-content: center
+        align-items: center
+        svg
+            width: get-vw(55px)
+        &.active
+            background: linear-gradient(to right, #6ab537, #6eb937)
+            width: get-vw(100px)
+            height: get-vw(100px)
+            border: 2px solid #fff
+            box-shadow: 0px 7px 14px 0px rgba(124,195,55,0.34)
+            animation: activeWave 0.4s linear normal
+
+    .nextToActive
+        background: #75be37
+        width: get-vw(27px)
+        height: get-vw(27px)
+        border: get-vw(3px) solid #fff
+        box-shadow: 0px 7px 14px 0px rgba(124, 195, 55, 0.36)
+        animation: nextToActiveWave 1s linear alternate
+
+    .line
+        height: 100%
+        width: get-vw(2px)
+        background: #d8dfea
+        position: absolute
+        z-index: 1
+        top: get-vw(75px)
+        left: 50%
+        transform: translate(-50%)
+        &--top
+            height: get-vw(200px)
+            top: get-vw(25px)
+        &--end
+            top: get-vw(25px)
+            height: get-vw(200px)
+
+    .clipPathBox
+        position: fixed
+        width: get-vw(3px)
+        left: 50%
+        transform: translateX(-50%)
+        height: 55%
+        top: 0
+
+    &__infograph
+        text-align: center
+        background: #fff
+        padding: get-vw(50px) 0
+        box-shadow: 0px 2px 50px 6px rgba(46,53,65, 0.08)
+        margin-bottom: get-vw(20px)
+        h2
+            font-size: get-vw(50px)
+            font-weight: 500
+    &__package
+      background: #f8f8f8
+      text-align: center
+
+      border-bottom: 1px solid rgba(5,104,57,0.04)
+      background: rgba(247,247,247,1)
+      .container
+          padding-top: get-vw(80px)
+          h2
+            font-size: get-vw(36px)
+            font-weight: 500
+            width: 65%
+            margin: get-vw(50px) auto
+          img
+            width: get-vw(1100px)
+            height: auto
+
+          .package__btn-box
+            display: flex
+            width: 50%
+            margin: get-vw(50px) auto
+            justify-content: space-around
+
+          .btn
+            font-size: get-vw(18px)
+            color: #fff
+            display: inline-block
+            text-decoration: none
+            padding: get-vw(18px) get-vw(60px)
+            border-radius: 4px
+            &--buy
+              background: #7bc237
+              box-shadow: 0px 10px 20px 0px rgba(124, 195, 55, 0.36)
+              transition: box-shadow 0.2s ease-in-out
+              &:hover
+                  box-shadow: 0 15px 25px 2px rgba(124, 195, 55, 0.26)
+            &--instr
+              background: #373d39
+              box-shadow: 0px 10px 20px 0px rgba(49, 40, 66, 0.2)
+              transition: box-shadow 0.2s ease-in-out
+              &:hover
+                box-shadow: 0 15px 25px 2px rgba(49, 40, 66, 0.1)
+    &__bottom
+        text-align: center
+        &-text
+            .container
+                display: flex
+                justify-content: space-between
+                margin: get-vw(30px) auto
+                p
+                    font-size: get-vw(13px)
+                    width: 60%
+                    text-align: left
+
+    .st0
+      fill: none
+      stroke: #FFFFFF
+      stroke-width: 9
+      stroke-miterlimit: 10
+    .st1
+      fill: none
+      stroke: #FFFFFF
+      stroke-width: 9
+      stroke-linecap: round
+      stroke-miterlimit: 10
+    .st2
+      fill: none
+      stroke: #FFFFFF
+      stroke-width: 9
+      stroke-linecap: round
+      stroke-linejoin: round
+      stroke-miterlimit: 10
+    .st3
+      stroke: #FFFFFF
+      stroke-miterlimit: 10
+
+
+.infograph
+    &__wrapper
+        display: flex
+        padding-top: get-vw(30px)
+        min-height: get-vw(520px)
+        .svg--rt
+            width: get-vw(450px)
+            position: absolute
+            transform: translateX(get-vw(-30px))
+        .info-icn
+            &--rt
+                transform: translateY(get-vw(50px))
+        p
+            font-size: get-vw(19px)
+            width: 90%
+            font-weight: 500
+        svg
+            width: get-vw(42px)
+            position: absolute
+
+    &__left
+        width: 33%
+        text-align: right
+        p
+         @extend %relative
+         transform: translateX(get-vw(-30px))
+        .left-top
+            @extend %relative
+            img
+              position: absolute
+              bottom: get-vw(-117px)
+              right: get-vw(-60px)
+        .left-bottom
+            margin-top: get-vw(265px)
+            @extend %relative
+            img
+              position: absolute
+              bottom: get-vw(-20px)
+              right: get-vw(-70px)
+    &__middle
+      width: 33%
+      @extend %relative
+      img
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        width: get-vw(365px)
+    &__img
+        width: get-vw(300px)
+        height: get-vw(300px)
+        border-radius: 50%
+        background-image: url(../img/bacteria.jpg)
+        background-size: 150%
+        background-position: 50% 50%
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate( -50%, -50%)
+        box-shadow: 0 0 get-vw(130px) 0 rgba(124, 195, 55, 0.3)
+        border: 2px solid #056839
+        padding: 15px
+    &__right
+        width: 33%
+        text-align: left
+        p
+          margin-left: 20%
+          position: relative
+          top: get-vw(-17px)
+        .right-top
+            margin-left: auto
+            @extend %relative
+            img
+              position: absolute
+              bottom: get-vw(-100px)
+              left: get-vw(-60px)
+        .right-bottom
+            margin-left: auto
+            margin-top: get-vw(260px)
+            @extend %relative
+            img
+              position: absolute
+              bottom: 0
+              left: get-vw(-63px)
+
+.pathSVG
+    visibility: hidden
+
+.jq-clipthru-clone .roadmap__row .circle
+  display: none
+
+
+
+
+
+
+
+@-webkit-keyframes nextToActiveWave
+    0%
+        box-shadow: 0 0 0 0 rgba(124, 195, 55, 0),  0 0 0 get-vw(6px) rgba(124, 195, 55, 0.2)
+    30%
+        box-shadow:  0 2px 4px 0 rgba(124, 195, 55, 0.1), 0 0 0 get-vw(10px) rgba(124, 195, 55, 0.2)
+        width: get-vw(30px)
+        height: get-vw(30px)
+    50%
+        box-shadow:  0 3px 7px 0 rgba(124, 195, 55, 0.2), 0 0 0 get-vw(20px) rgba(124, 195, 55, 0.1)
+    100%
+        box-shadow: 0 7px 14px 0 rgba(124, 195, 55, 0.36), 0 0 0 get-vw(25px) rgba(124, 195, 55, 0)
+
+
+
+@-webkit-keyframes activeWave
+    0%
+        width: get-vw(30px)
+        height: get-vw(30px)
+        box-shadow: 0 0 0 get-vw(0px) rgba(213,234,193,0.7)
+
+    80%
+        width: get-vw(110px)
+        height: get-vw(110px)
+        box-shadow: 0px 10px 20px 0px rgba(124,195,55,0.25)
+    100%
+        width: get-vw(100px)
+        height: get-vw(100px)
+        box-shadow: 0px 7px 14px 0px rgba(124,195,55,0.4)

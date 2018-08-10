@@ -1,0 +1,76 @@
+header
+    .header-wrapper
+        position: fixed
+        left: get-vw(30px)
+        right: get-vw(30px)
+        top: get-vw(25px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        z-index: 999
+        background-color: #fff
+        transition: width 300ms linear, box-shadow 300ms linear,  padding 300ms linear
+        box-shadow: 0 3px 24px 0 rgba(5, 104, 57, 0.15)
+
+    a
+        display: inline-block
+        text-decoration: none
+        padding: 0  get-vw(25px)
+        color: rgba(5, 104, 57,1)
+        font-size: get-vw(20px)
+        font-weight: 500
+        transition: color 0.3s linear
+        &:hover
+            color: rgba(106,181,55,1)
+    .header__primary-nav
+        a
+            position: relative
+            color: green
+            font-weight: 500
+            &:after
+                content: ""
+                position: absolute
+                right: get-vw(25px)
+                top: get-vw(30px)
+                height: get-vw(3px)
+                width: 0
+                background-color: #6ab537
+                transition: width 0.4s ease-in-out
+            &:hover
+                &:after
+                    left: get-vw(25px)
+                    width: 83%
+
+            &:nth-child(2)
+                &:hover
+                    &:after
+                        width: 85%
+                        left: get-vw(25px)
+            &:last-child
+                &:hover
+                    &:after
+                        width: 75%
+
+
+
+    .header__logo
+        margin-left: get-vw(10px)
+        svg
+            width: get-vw(170px)
+    .external-link
+        display: flex
+        align-items: center
+    .external-link a
+        &:last-child
+            color: #fff
+            padding: get-vw(28px) get-vw(40px)
+            background-image: linear-gradient(to right, #6ab537, #7cc337)
+            box-shadow: 0px 7px 14px 0px rgba(124, 195, 55, 0.36)
+            transition: box-shadow 0.2s ease-in-out
+            &:hover
+                box-shadow: 0 10px 15px 2px rgba(124, 195, 55, 0.26)
+
+
+
+
+
